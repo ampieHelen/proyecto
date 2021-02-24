@@ -9,10 +9,10 @@
 <body>
     <nav>
         <ul>
-            <img src="./../img/customer-satisfaction.svg" alt="logo" width="5%">
+            <img src="./img/customer-satisfaction.svg" alt="logo" width="2%">
             <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./acercade.html">Acerca de</a></li>
-            <li><a href="./contactenos.html">Contactenos</a></li>
+            <li><a href="./acercade.html" class="not-active">Acerca de</a></li>
+            <li><a href="./contactenos.html" >Contactenos</a></li>
             <li><a href="./servicios.html">Servicios</a></li>
             <li><a href="./iniciarsesion.html">Iniciar sesiòn</a></li>
             <li><a href="./registro.html">Registro</a></li>
@@ -59,6 +59,11 @@
         border: 1px solid #f1ecec;
         border-radius: 50px;
         padding: 20px;
+    }
+    .not-active { 
+        pointer-events: none; 
+        cursor: default; 
+        opacity: 0.8;
     }
     
 </style>
