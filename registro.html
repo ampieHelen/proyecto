@@ -4,44 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <title>Registrarse</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
 </head>
 
 <body>
-   <nav>
-       <ul>
-            <img src="./img/customer-satisfaction.svg" alt="logo" width="2%">
-           <li><a href="./index.html">Inicio</a></li>
-           <li><a href="./acercade.html">Acerca de</a></li>
-           <li><a href="./contactenos.html">Contactenos</a></li>
-           <li><a href="./servicios.html">Servicios</a></li>
-           <li><a href="./iniciarsesion.html">Iniciar sesiòn</a></li>
-           <li><a href="./registro.html">Registro</a></li>  
-       </ul>
-   </nav>
-    <section>
+   <header>
+        <nav>
+            <ul>
+                <img src="./img/customer-satisfaction.svg" alt="logo" width="2%">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./acercade.html">Acerca de</a></li>
+                <li><a href="./contactenos.html">Contactenos</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./iniciarsesion.html">Iniciar sesiòn</a></li>
+                <li><a href="./registro.html">Registro</a></li>  
+            </ul>
+        </nav>
+   </header>
+    <main>
         <form action="">
             <h3>Crear cuenta</h3>
             <label form="nombre">Nombre:</label>
-            <input name="nombre" type="text">
+            <input name="nombre" type="text" required>
             <br><br>
             <label form="nombre">Correo:</label>
-            <input name="nombre" type="text">
+            <input name="nombre" type="text" required>
             <br><br>
             <label form="nombre">Telefono:</label>
-            <input name="nombre" type="text">
+            <input name="nombre" type="text" required>
             <br><br>
             <label form="contrasena">Contraseña:</label>
-            <input name="contrasena" type="password">
+            <input name="contrasena" type="password" required>
+            <br><br>
+            <label form="contrasena">Genero:</label>
+            <select name="select">
+                <option value="value1">Femenino</option>
+                <option value="value2" selected>Masculino</option>
+                <option value="value3">Otro</option>
+            </select>
+            <br><br>
+            <label form="contrasena">Preferencia:</label>
+            <select name="select">
+                <option value="value1">Musica</option>
+                <option value="value2" selected>Películas</option>
+                <option value="value3">Programas</option>
+                <option value="value3">Documentos</option>
+            </select>
+            <br><br>
+            <label form="contrasena">Comentarios:</label>
+            <textarea cols="30" rows="3" required></textarea>
+            <br>
+            <label><input type="checkbox" value="first_checkbox" required> Acepto los términos y condiciones</label>
             <br><br>
             <input type="submit" value="Crear cuenta">
         </form>
-    </section>
-
+    </main>
+    <footer>
+        <div class="footer">
+            <p>Todos los derechos reservados</p>
+        </div>
+    </footer>
 </body>
 <style>
     body{
         margin: 0px;
         font-size: 14px;
+        font-family: 'Mulish', sans-serif;
     }
     nav{
         background: #413c69;
@@ -61,16 +89,23 @@
     a{
         text-decoration: none;
     }
-    section{
-        margin-top: 30px;
-        margin: 10px;
+    main{
+        margin: 20px;
+        display: flex;
+        justify-content: center;
     }
     form{
-        text-align: center;
+        text-align: justify;
         background: #ece8e8;
         border: 1px solid silver;
         padding: 30px;
         border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+    footer{
+        text-align: center;
     }
 </style>
 </html>

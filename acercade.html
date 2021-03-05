@@ -1,37 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Acerca de</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
-
 <body>
-    <nav>
-        <ul>
-            <img src="./img/customer-satisfaction.svg" alt="logo" width="2%">
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./acercade.html" class="not-active">Acerca de</a></li>
-            <li><a href="./contactenos.html" >Contactenos</a></li>
-            <li><a href="./servicios.html">Servicios</a></li>
-            <li><a href="./iniciarsesion.html">Iniciar sesiòn</a></li>
-            <li><a href="./registro.html">Registro</a></li>
-        </ul>
-    </nav>
-    <section class="acercade">
-        <h3>Acerca de</h3>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin est mi, porttitor convallis justo finibus a. In ultrices massa eu venenatis congue. Nulla in felis facilisis, placerat nisi et, finibus arcu. Nunc at suscipit tellus. Vestibulum sem velit, varius quis justo quis, efficitur dictum metus. Praesent hendrerit nisi ut urna dignissim, sit amet viverra purus mollis. Etiam ac elit placerat, finibus lacus in, faucibus lorem. Aliquam dapibus arcu sollicitudin porta finibus. Phasellus dui nulla, tincidunt quis nulla at, consectetur efficitur nisi. Phasellus elementum orci eu nisi fermentum tincidunt quis at leo. Maecenas dapibus erat eget justo facilisis dictum. Donec ac sodales leo. Aenean pulvinar nec libero et pharetra. Curabitur sed fringilla tortor. Praesent eleifend sed tellus vitae gravida. Vivamus laoreet at nulla id eleifend.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin est mi, porttitor convallis justo finibus a. In ultrices massa eu venenatis congue. Nulla in felis facilisis, placerat nisi et, finibus arcu. Nunc at suscipit tellus. Vestibulum sem velit, varius quis justo quis, efficitur dictum metus. Praesent hendrerit nisi ut urna dignissim, sit amet viverra purus mollis. Etiam ac elit placerat, finibus lacus in, faucibus lorem. Aliquam dapibus arcu sollicitudin porta finibus. Phasellus dui nulla, tincidunt quis nulla at, consectetur efficitur nisi. Phasellus elementum orci eu nisi fermentum tincidunt quis at leo. Maecenas dapibus erat eget justo facilisis dictum. Donec ac sodales leo. Aenean pulvinar nec libero et pharetra. Curabitur sed fringilla tortor. Praesent eleifend sed tellus vitae gravida. Vivamus laoreet at nulla id eleifend.
-        </p>
-    </section>
+    <header>
+        <nav>
+            <ul>
+                <img src="./img/customer-satisfaction.svg" alt="logo" width="2%">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./acercade.html" class="not-active">Acerca de</a></li>
+                <li><a href="./contactenos.html" >Contactenos</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./iniciarsesion.html">Iniciar sesiòn</a></li>
+                <li><a href="./registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="acercade">
+            <h3>Acerca de</h3>
+            <img src="./img/alumno.jpg" alt="foto alumno" width="20%">
+            <p>
+                Helen De Fátima Ampié Avellán <br>
+                23 años
+            </p>
+            <hr>
+            <p>Dirección: Managua</p>
+            <p>GitHub: @ampieHelen</p>
+            <hr>
+            <p>conocimiento de HTML5 <br>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </p>
+            <p>conocimiento de CSS3 <br>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </p>
+            <hr>
+            <div class="redes-sociales">
+                <h3>Redes sociales</h3>
+                <a href="https://www.facebook.com/helen.defatima/" target="blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/helen-de-f%C3%A1tima-a-07218bb6/" target="blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>Todos los derechos reservados</p>
+        </div>
+    </footer>
 </body>
 <style>
     body{
         margin: 0px;
-        font-size: 14px;
+        font-size: 16px;
+        font-family: 'Mulish', sans-serif;
     }
     nav{
         background: #413c69;
@@ -51,20 +84,32 @@
     a{
         text-decoration: none;
     }
-    h3{
-        text-align: center;
+    i{
+        font-size: 16px;
+        color: rgb(226, 164, 30);
+    }
+    .redes-sociales i{
+        color: rgb(148, 143, 148);
+        font-size: 20px;
+    }
+    main{
+        display: flex;
+        justify-content: center;
     }
     .acercade{
         margin: 20px;
         border: 1px solid #f1ecec;
         border-radius: 50px;
         padding: 20px;
+        width: 50%;
     }
     .not-active { 
         pointer-events: none; 
         cursor: default; 
         opacity: 0.8;
     }
-    
+    footer{
+        text-align: center;
+    }
 </style>
 </html>
